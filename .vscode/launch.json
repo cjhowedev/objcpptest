@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "lldb",
+      "request": "launch",
+      "internalConsoleOptions": "openOnSessionStart",
+      "console": "internalConsole",
+      "cwd": "${workspaceFolder}",
+      "program": "${command:cmake.launchTargetPath}",
+      "env": {
+        "PATH": "$PATH:${command:cmake.launchTargetDirectory}"
+      }
+    }
+  ]
+}
